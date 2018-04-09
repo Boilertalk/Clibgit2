@@ -6,13 +6,7 @@ import PackageDescription
 let package = Package(
     name: "Clibgit2",
     pkgConfig: "libgit2",
-    products: [
-        .library(
-            name: "Clibgit2",
-            targets: ["Clibgit2"]
-        )
-    ],
-    targets: [
-        .target(name: "Clibgit2", dependencies: [])
+    providers: [
+        .brew(["libgit2"])
     ]
 )
