@@ -13,6 +13,6 @@ let package = Package(
         )
     ],
     targets: [
-        .target(name: "Clibgit2")
+        .target(name: "Clibgit2", dependencies: [])
     ]
 )
