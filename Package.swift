@@ -8,5 +8,11 @@ let package = Package(
     pkgConfig: "libgit2",
     providers: [
         .brew(["libgit2"])
+    ],
+    products: [
+        .library(name: "Clibgit2", targets: ["Clibgit2"])
+    ],
+    targets: [
+        .target(name: "Clibgit2", dependencies: [])
     ]
 )
